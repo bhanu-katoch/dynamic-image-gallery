@@ -59,3 +59,21 @@ An interactive web-based image gallery that allows users to dynamically add and 
 | Member 4 | jQuery Effects                |
 | Member 5 | Integration & Testing         |
 | Member 6 | Documentation                 |
+
+ ### 🚀 Team Instructions
+
+Please check the **Issues section** of the repository.
+
+Each member:
+1. Go to Issues
+2. Find your assigned task
+3. Assign the issue to yourself
+4. Move it to "In Progress" in the Project Board when you start working
+5. Update progress regularly
+
+⚠️ Important:
+- Do NOT work on someone else’s task
+- Follow your assigned role only
+- Push code regularly with proper commit messages
+
+Let’s maintain clean workflow and coordination ✅
