@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Image Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JavaScript -->
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- 🔷 Header Section -->
+    <header>
+      <h1>📸 Dynamic Image Gallery</h1>
+      <p>Add, remove and interact with images using animations</p>
+    </header>
+
+    <!-- 🔷 Upload Section -->
+    <section class="upload-section">
+      <h2>Add New Image</h2>
+
+      <input type="text" id="image-url" placeholder="Enter image URL here..." />
+      <button id="add-btn">Add Image</button>
+    </section>
+
+    <!-- 🔷 Gallery Controls -->
+    <section class="controls">
+      <button id="clear-gallery">Clear Gallery</button>
+    </section>
+
+    <!-- 🔷 Gallery Container -->
+    <main>
+      <div id="gallery" class="gallery-container">
+        <!-- Example Static Image (for testing UI) -->
+        <div class="image-card">
+          <img
+            src="https://demo-res.cloudinary.com/image/upload/sample.jpg"
+            alt="Sample Image"
+          />
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- 🔷 Footer -->
+    <footer>
+      <p>© 2026 Dynamic Gallery Project | Team Project</p>
+    </footer>
+  </body>
+</html>
