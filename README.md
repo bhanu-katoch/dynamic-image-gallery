@@ -45,7 +45,7 @@ An interactive web-based image gallery that allows users to dynamically add and 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/image-gallery.git
+   git clone https://github.com/bhanu-katoch/dynamic-image-gallery
 2. Open index.html in your browser
 3. Start adding and interacting with images 🎉
 
