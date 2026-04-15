@@ -50,8 +50,8 @@ $(document).ready(function () {
   }
 
   // Remove with hybrid animation
-  function removeImage(button) {
-    $(button).closest('.image-card').fadeSlideToggle(1200, function () {
+  function removeImage(event) {
+    $(event.currentTarget).closest('.image-card').fadeSlideToggle(1200, function () {
       $(this).remove();
     });
   }

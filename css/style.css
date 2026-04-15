@@ -10,6 +10,9 @@ body {
   background: linear-gradient(135deg, #003d4d, #00c996);
   color: #fff;
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -47,10 +50,6 @@ header p {
   border-radius: 8px;
   outline: none;
   font-size: 1rem;
-}
-
-#image-url:focus {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
 
 button {
@@ -100,6 +99,14 @@ button:hover {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.253);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+
+  display: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.253);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
 }
@@ -113,6 +120,19 @@ button:hover {
 .image-card img {
   width: 100%;
   height: 230px;
+  object-fit: contain;
+  display: block;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  cursor: zoom-in;
+}
+
+.image-card img.zoomed {
+  transform: scale(1.5);
+  cursor: zoom-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+
   object-fit:cover;
   display: block;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -143,8 +163,14 @@ button:hover {
 footer {
   text-align: center;
   padding: 20px;
+
+  margin-top: auto;
   margin-top: 20px;
   background: rgba(0, 0, 0, 0.288);
   font-size: 0.9rem;
   opacity: 0.8;
-} 
+}
+
+#image-url:focus {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
